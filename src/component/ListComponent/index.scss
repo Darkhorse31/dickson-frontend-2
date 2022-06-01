@@ -1,0 +1,39 @@
+.MainList {
+    width: 26%;
+    display: flex;
+    flex-shrink: none;
+    flex-grow: none;
+    -webkit-box-shadow: 6px 4px 13px -4px rgba(196, 178, 196, 1);
+    -moz-box-shadow: 6px 4px 13px -4px rgba(196, 178, 196, 1);
+    box-shadow: 6px 4px 13px -4px rgba(196, 178, 196, 1);
+    border-radius: 10px;
+    align-items: center;
+    border: .2px solid rgba(128, 128, 128, 0.274);
+    margin-right: 20px;
+    .ListComp_wrapper{
+        margin: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        .CustomerImage{
+            width: 32%;
+            aspect-ratio: 1;
+        }
+        .right{
+            align-self: baseline;
+            .nameofCustomer{
+                font-size: clamp(1.8rem,3vw,2rem);
+            }
+           
+        }
+    }
+    @media (max-width: 768px) {
+        width: 92%;
+        
+    }
+    &:hover{
+        background-color: rgba(238, 128, 94, 0.336);
+    }
+
+}

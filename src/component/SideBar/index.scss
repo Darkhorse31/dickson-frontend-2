@@ -1,0 +1,99 @@
+.Sidebar {
+    width: auto;
+    height: 100vh;
+    border-right: 1px solid rgba(34, 34, 34, 0.295);
+
+    .Sidebar_Desktop {
+        padding: 2rem;
+        height: 100%;
+        margin-right: 3rem;
+        background-color: white;
+
+        .LogoImage {
+            object-fit: cover;
+        }
+
+        ul {
+            margin-top: 3rem;
+
+            li {
+                margin: 3rem 0rem;
+
+                a {
+                    font-size: 1.6rem;
+                    color: #222;
+                    font-weight: 600;
+                    opacity: .8;
+                }
+            }
+        }
+
+        @media (max-width:768px) {
+            display: none;
+
+        }
+    }
+
+    .mobile_nav {
+        padding: 2rem 5rem 2rem 3rem;
+        height: 100%;
+        margin-right: 3rem;
+        position: absolute;
+        background-color: white;
+        top: 0;
+        transform: translateX(-100%);
+        transition: all .2s ease-in-out;
+        margin-right: 3rem;
+        border-right: 1px solid rgba(34, 34, 34, 0.295);
+
+        .LogoImage {
+            object-fit: cover;
+        }
+
+        ul {
+            margin-top: 3rem;
+
+            li {
+                margin: 3rem 0rem;
+
+                a {
+                    font-size: 1.6rem;
+                    color: #222;
+                    font-weight: 600;
+                    opacity: .8;
+                }
+            }
+        }
+        &[active="true"] {
+            transform: translateX(0%)
+        }
+
+    }
+
+    .button {
+        position: absolute;
+        top: 1rem;
+        width: 40px;
+        padding: .5rem;
+        aspect-ratio: 1;
+        left: 10px;
+        z-index: 100;
+        transition: all .2s ease-in;
+        background: url("../../assets/mu.png");
+        background-position: center center;
+        background-size: cover;
+        opacity:.8;
+        &[active="true"] {
+            background-position: center center;
+            background-size: 50px;
+            transition: all .2s ease-in;
+            transform: translateX(250px);
+            background: url("../../assets/mi.png");
+
+        }
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+        }
+    }
+}

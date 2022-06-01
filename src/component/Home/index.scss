@@ -1,0 +1,20 @@
+.Home {
+    width: 100%;
+    background-color: white;
+    height: 100vh;
+    .Home_wrapper {
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        .Home_right {
+           width: 100%;
+           background-color: white;
+           @media (max-width: 768px) {
+               width: 96%;
+               margin-inline: auto;
+               
+           }
+        }
+
+    }
+}

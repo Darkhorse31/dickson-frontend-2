@@ -1,0 +1,175 @@
+.Login {
+    width: min(100%, 450px);
+    display: flex;
+    flex-direction: column;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100vh;
+
+    .brandlogo {
+        object-fit: cover;
+        position: absolute;
+        top: 50px;
+        z-index: 1000;
+    }
+
+    .Login_wrapper {
+
+        width: 96%;
+        position: absolute;
+        top: 20%;
+
+        .Login_top {
+            h2 {
+                font-size: 2.5rem;
+            }
+
+            span {
+                font-size: 1.5rem;
+                font-weight: 0;
+                color: #99242d;
+            }
+        }
+
+        // .Login_radio {
+        //     width: 100%;
+        //     margin-top: 1rem;
+        //     margin-bottom: 2rem;
+        //     display: flex;
+        //     gap: 1rem;
+
+        //     div {
+        //         display: flex;
+        //         align-items: center;
+        //         justify-content: center;
+        //         height: 20px;
+        //         line-height: 20px;
+
+        //         label {
+        //             font-size: 1.5rem;
+        //             opacity: .8;
+        //         }
+        //     }
+        // }
+
+        .form {
+            width: 100%;
+
+            .sgn_in {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            form {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                ul {
+                    width: 100%;
+
+                    li {
+                        width: 100%;
+                        display: flex;
+                        margin-bottom: 1.5rem;
+                        border: 1px solid rgba(128, 128, 128, 0.438);
+                        align-items: center;
+                        border-radius: 5px;
+
+                        .input {
+                            height: 1.5rem;
+                            flex: 1;
+                            border: 0;
+                            outline: 0;
+                            padding: 1rem;
+                            transition: .2s ease-in;
+                            border-left: 1px solid rgba(128, 128, 128, 0.37);
+                            height: 100%;
+
+                            &::placeholder {
+                                font-size: 1.5rem;
+                                text-transform: capitalize;
+                                opacity: .5;
+                            }
+
+                            &:focus {
+
+                                transition: .2s ease-in;
+                                color: #212529;
+                                background-color: #fff;
+                                border-color: #86b7fe;
+                                box-shadow: 0 0 0 .4rem rgb(13 110 253 / 25%);
+                            }
+
+                        }
+
+                    }
+
+
+                }
+
+                .btn-sb {
+                    width: 100%;
+                    padding: 1rem;
+                    font-size: 1.6rem;
+                    background: #f2ba49;
+                    border: 0;
+                    margin-bottom: 1rem;
+                    color: #56595c;
+                    font-weight: 200;
+                    border-radius: 30px;
+                    align-self: center;
+
+                    &:active {
+                        border-radius: 30px;
+                        color: #212529;
+                        border-color: #86b7fe;
+                        box-shadow: 0 0 0 .4rem rgb(13 110 253 / 25%);
+                    }
+
+                }
+
+            }
+        }
+    }
+
+}
+
+input[type="radio"]:checked {
+    color: #99242d;
+    border: 1px solid #99242d;
+}
+
+.svgicon {
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    opacity: .8;
+
+}
+
+.ForgetPassword {
+    width: 18rem;
+    padding: 1rem;
+    font-size: 1.6rem;
+    color: #56595cce;
+    transition: .2s ease-out;
+    background-color: transparent;
+    border: 0;
+    margin-top: 1rem;
+    position: absolute;
+    transform: translateX(70%);
+    border-radius: 5px;
+
+    &:active {
+        border-radius: inherit;
+        color: #212529;
+        border-color: #86b7fe;
+        box-shadow: 0 0 0 .4rem rgb(13 110 253 / 25%);
+        margin-inline: auto;
+        border-radius: 10px;
+    }
+
+}

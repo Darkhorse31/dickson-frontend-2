@@ -1,0 +1,23 @@
+.listWrapper {
+    width: inherit;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 2rem;
+    background-color: white;
+    h3 {
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+    }
+
+    .component_div {
+        width:100vw;
+        display: flex;
+        flex-wrap: wrap;
+        overflow-y: scroll;
+        gap: 2rem;
+       
+    }
+}

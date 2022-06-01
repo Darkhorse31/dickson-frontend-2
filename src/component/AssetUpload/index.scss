@@ -1,0 +1,194 @@
+.Asset {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 2rem;
+
+    .heading {
+        font-size: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    form {
+        .Select {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+
+            .AssetSelect {
+                width: 20%;
+                height: 3.7rem;
+                font-size: 1.5rem;
+                letter-spacing: .1rem;
+                padding-inline: 1rem;
+                background-color: white;
+                color: #212529;
+                border: 1px solid gray;
+                border-radius: 5px;
+
+                &:focus {
+
+                    transition: .2s ease-in;
+                    color: #212529;
+                    background-color: #fff;
+                    border-color: #86b7fe;
+                    box-shadow: 0 0 0 .4rem rgb(13 110 253 / 25%);
+                }
+
+                @media (max-width:768px) {
+                    width: 95%;
+
+                }
+            }
+
+        }
+
+        .buttongroup {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .div1 {
+                background-color: #f2ba49;
+                padding: 1rem 2rem;
+                color: #fff;
+                border-radius: 50rem;
+            }
+
+            .div2 {
+                background-color: #212529;
+                padding: 1rem 2rem;
+                color: #fff;
+                border-radius: 50rem;
+            }
+
+        }
+
+        .Assets_image {
+            max-width: 96%;
+            display: flex;
+            gap: 2rem;
+            // flex-wrap: wrap;
+            margin-bottom: 3rem;
+            margin-inherit: auto;
+            overflow-x: scroll;
+            scroll-behavior: smooth;
+
+            &::-webkit-scrollbar {
+                height: 10px;
+            }
+
+            /* Track */
+            &::-webkit-scrollbar-track {
+                background: #ffffff;
+            }
+            /* Handle */
+           &::-webkit-scrollbar-thumb{
+               background-color: #86b7fe;
+           }
+
+            /* Handle on hover */
+            &::-webkit-scrollbar-thumb:hover {
+                background: rgb(90, 160, 224);
+            }
+
+            img {
+                padding: 1rem;
+                border-radius: 10px;
+                border: .2px solid rgba(128, 128, 128, 0.253);
+                width: 10%;
+
+                @media (max-width: 768px) {
+                    width: 28%;
+
+                }
+
+            }
+
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-bottom: 10px;
+
+            #upload {
+                // background-color: #212529;
+                border-radius: 5px;
+                border: .2px solid rgba(128, 128, 128, 0.253);
+                padding: 1rem 2rem;
+                font-size: 1.2rem;
+                width: 30%;
+
+                @media (max-width:768px) {
+                    width: 95%;
+                }
+
+                &:focus {
+                    transition: .2s ease-in;
+                    color: #212529;
+                    background-color: #fff;
+                    border-color: #86b7fe;
+                    box-shadow: 0 0 0 .4rem rgb(13 110 253 / 25%);
+                }
+            }
+        }
+
+        .Textarea {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            .textarea {
+                width: 35%;
+                height: 180px;
+                font-size: 15px;
+
+
+
+                @media (max-width: 768px) {
+                    width: 80%;
+                    height: 150px;
+
+                }
+
+
+            }
+        }
+
+        .Submit {
+            width: 300px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1.5rem 0rem;
+            margin-bottom: 1rem;
+            border-radius: 50rem;
+            margin-inline: 10px;
+            background: #212529;
+            border: none;
+            color: #fff;
+
+            @media (max-width: 768px) {
+                width: 80%;
+                border-radius: 50rem;
+                background: #212529;
+                color: #fff;
+                border: none;
+                margin-bottom: 2rem;
+            }
+
+        }
+    }
+
+    @media (max-width:768px) {
+        padding-right: 2;
+        align-items: center;
+        margin-left: 0;
+    }
+}
